@@ -1,0 +1,19 @@
+nav{
+    position: relative;
+    display: flex;
+    padding: 0 1em;
+    h1{
+        font-size: 2.4em;
+        text-transform: capitalize;
+        font-family: 'Do Hyeon', sans-serif;
+        font-weight: bolder;
+        span{
+            position: relative;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            clip-path: polygon(25% 0%, 26% 77%, 75% 100%, 0% 100%);
+            background: #ec6e4c;
+        }
+    }
+}

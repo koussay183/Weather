@@ -1,0 +1,25 @@
+.prelaoder{
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: rgb(6, 6, 71);
+    span{
+        position: relative;
+        width: 150px;
+        height: 150px;
+        transition: transform .5s ease-in-out;
+        animation: spin 1s ease-in-out infinite;
+        border-top: 10px solid white;
+        border-bottom: 10px solid coral;
+        border-radius: 50%;
+    }
+}
+@keyframes spin {
+    from{}
+    to{transform: rotate(360deg);}
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cloudy</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style/main.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="prelaoder" id="preloader"><span></span></div>
+    <div class="hoolder">
+        <nav>
+            <h1>Cloudy<span></span></h1>
+        </nav>
+        <div class="box" id="box">
+            <div class="nav-box-bar-holder">
+                <input type="text" class="search-bar" id="search-bar" placeholder="type city name">
+                <button id="submit"><i class="material-icons">search</i></button>
+            </div>
+            <div class="dtls-holder">
+                <div class="text-holder">
+                    <h2>weather in <span id="city-name">siliana</span></h2>
+                    <h3><span id="temp" style="color: #ec6e4c;">52</span>°C</h3>
+                </div>
+                <div class="icon-holder">
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png">
+                    <span
+                    id="descreption">Cloudy</span>
+                </div>
+                <div class="other-text">
+                    <span class="humidity" >humidity : <span id="humidity">60%</span></span>
+                    <span class="speed" >speed:<span id="speed"></span>km/h</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src='js/app.js'></script>
+</html>

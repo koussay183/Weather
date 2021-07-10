@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+nav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 1em;
+}
+
+nav h1 {
+  font-size: 2.4em;
+  text-transform: capitalize;
+  font-family: 'Do Hyeon', sans-serif;
+  font-weight: bolder;
+}
+
+nav h1 span {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  -webkit-clip-path: polygon(25% 0%, 26% 77%, 75% 100%, 0% 100%);
+          clip-path: polygon(25% 0%, 26% 77%, 75% 100%, 0% 100%);
+  background: #ec6e4c;
+}
+
+.nav-box-bar-holder {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 0 0 2em;
+}
+
+.nav-box-bar-holder input {
+  outline: none;
+  width: 80%;
+  max-width: 600px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 50px;
+  font-size: 1.1em;
+  color: white;
+  padding-left: 1em;
+  background: rgba(128, 128, 128, 0.144);
+}
+
+.nav-box-bar-holder button {
+  outline: none;
+  background: transparent;
+  border: unset;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .2s ease;
+  transition: -webkit-transform .2s ease;
+  transition: transform .2s ease;
+  transition: transform .2s ease, -webkit-transform .2s ease;
+}
+
+.nav-box-bar-holder button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.nav-box-bar-holder .material-icons {
+  color: white;
+  font-size: 3em;
+  margin: 0 .2em;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: white;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: white;
+  opacity: .6;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: white;
+  opacity: .6;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+.prelaoder {
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #060647;
+}
+
+.prelaoder span {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+  -webkit-animation: spin 1s ease-in-out infinite;
+          animation: spin 1s ease-in-out infinite;
+  border-top: 10px solid white;
+  border-bottom: 10px solid coral;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes spin {
+  from {
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Do Hyeon', sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(#57a0b8), to(#0f4658)) no-repeat;
+  background: linear-gradient(#57a0b8, #0f4658) no-repeat;
+  min-height: 100vh;
+  font-weight: bold;
+  overflow: hidden;
+  color: white;
+}
+
+.dtls-holder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin-top: 3em;
+  -webkit-box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.text-holder {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.text-holder h2 {
+  margin: .5em 0;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.text-holder h3 {
+  margin: 0 0 .5em 1em;
+  font-size: 3em;
+}
+
+.icon-holder {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2.2em;
+  max-height: 100px;
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: .5em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1em;
+}
+
+.icon-holder img {
+  height: 200px;
+  width: 200px;
+}
+
+.other-text {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding: 1em 1em 1em 2em;
+  font-size: 1.1em;
+}
+
+.other-text span {
+  margin: .1em;
+  letter-spacing: 4px;
+}
+
+@media (max-width: 365px) {
+  .dtls-holder {
+    position: relative;
+    top: auto;
+    left: auto;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    margin-top: 2em;
+    -webkit-box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.3);
+    width: 92%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 2em auto;
+  }
+  .nav-box-bar-holder .material-icons {
+    color: white;
+    font-size: 3em;
+    margin: 0;
+    width: auto;
+    height: auto;
+  }
+  .nav-box-bar-holder {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 0 0 .5em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
